@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				width: 220px;
+				padding: 10px;
+				font-family: Arial, sans-serif;
+			}
+			.button-row {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-bottom: 5px;
+			}
+			.button-row button {
+				flex: 1 1 45%;
+				margin: 2px;
+				padding: 5px;
+				font-size: 14px;
+				box-sizing: border-box;
+			}
+			#customSpeed,
+			#setCustomSpeed {
+				width: 100%;
+				padding: 5px;
+				font-size: 14px;
+				margin-bottom: 5px;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="button-row">
+			<button id="speed1">1x</button>
+			<button id="speed1_25">1.25x</button>
+			<button id="speed1_5">1.5x</button>
+			<button id="speed1_75">1.75x</button>
+			<button id="speed2">2x</button>
+		</div>
+		<input
+			type="number"
+			id="customSpeed"
+			placeholder="Custom speed"
+			step="0.1"
+			min="0.1" />
+		<button id="setCustomSpeed">Set Custom Speed</button>
+
+		<script src="popup.js"></script>
+	</body>
+</html>
